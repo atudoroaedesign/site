@@ -38,7 +38,7 @@ function Home() {
           <div className="hero__ring hero__ring--2"></div>
           <div className="hero__ring hero__ring--3"></div>
           <div className="hero__core">
-            <div className="hero__core-inner"><span>NX</span></div>
+            <div className="hero__core-inner"><span>Luxmus</span></div>
           </div>
         </div>
       </section>

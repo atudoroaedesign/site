@@ -211,13 +211,13 @@ section { position: relative; }
   align-items: center;
   justify-content: center;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 28px;
   font-weight: 700;
   color: #fff;
 }
 .nav__logo-text {
   font-family: var(--font-mono);
-  font-size: 0.8rem;
+  font-size: 28px;
   letter-spacing: 0.2em;
   color: var(--text-primary);
 }
@@ -583,7 +583,7 @@ section { position: relative; }
 }
 .hero__core-inner {
   font-family: var(--font-mono);
-  font-size: 1.4rem;
+  font-size: 26px;
   font-weight: 700;
   color: #fff;
 }
