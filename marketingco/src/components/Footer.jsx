@@ -7,8 +7,8 @@ function Footer() {
 
         <div className="footer__brand">
           <div className="footer__brand-logo">
-            <span className="nav__logo-mark">B</span>
-            <span className="footer__name">BerMak Digital</span>
+            <span className="nav__logo-mark">C</span>
+            <span className="footer__name">Clientrio</span>
           </div>
           <p>Design &amp; Marketing for companies that refuse to blend in.</p>
         </div>
