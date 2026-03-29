@@ -40,8 +40,8 @@ function Navbar() {
     <nav className={`nav${scrolled ? ' scrolled' : ''}`} id="nav" ref={menuRef}>
       <div className="nav__inner">
         <Link to="/" className="nav__logo">
-          <span className="nav__logo-mark">N</span>
-          <span className="nav__logo-text">NEXUS</span>
+          <span className="nav__logo-mark">L</span>
+          <span className="nav__logo-text">Luxmus</span>
         </Link>
 
         <ul className="nav__links">
