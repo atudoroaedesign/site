@@ -28,10 +28,6 @@ function Home() {
             <Link to="/services" className="btn btn--primary">Explore Services →</Link>
             <Link to="/process"  className="btn btn--ghost">Our Process</Link>
           </div>
-          <div className="hero__badge" data-animate="fade-up" data-delay="400">
-            <span className="hero__badge-dot"></span>
-            <span>Trusted by growing companies worldwide</span>
-          </div>
         </div>
         <div className="hero__visual">
           <div className="hero__ring hero__ring--1"></div>
@@ -45,17 +41,6 @@ function Home() {
 
       {/* ═══════ TRUSTED BY ═══════ */}
       <section className="trusted">
-        <div className="trusted__inner">
-          <p className="trusted__label">TRUSTED BY</p>
-          <div className="trusted__logos">
-            <span>Brandwave</span>
-            <span>Crestline Co.</span>
-            <span>Vero Labs</span>
-            <span>Altus Group</span>
-            <span>Meridian</span>
-            <span>Stackpoint</span>
-          </div>
-        </div>
       </section>
 
       {/* ═══════ SERVICES PREVIEW ═══════ */}

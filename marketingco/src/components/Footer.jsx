@@ -7,8 +7,8 @@ function Footer() {
 
         <div className="footer__brand">
           <div className="footer__brand-logo">
-            <span className="nav__logo-mark">C</span>
-            <span className="footer__name">Clientrio</span>
+            <span className="nav__logo-mark">L</span>
+            <span className="footer__name">Luxmus</span>
           </div>
           <p>Design &amp; Marketing for companies that refuse to blend in.</p>
         </div>
@@ -39,7 +39,7 @@ function Footer() {
 
       </div>
       <div className="footer__bottom">
-        <span>© 2026 Nexus Studio. All rights reserved.</span>
+        <span>© 2026 Luxmus Digital. All rights reserved.</span>
         <span>Built with precision.</span>
       </div>
     </footer>

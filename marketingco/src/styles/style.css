@@ -302,7 +302,7 @@ section { position: relative; }
 }
 .footer__name {
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 26px;
   letter-spacing: 0.2em;
   color: var(--text-primary);
 }
@@ -344,9 +344,9 @@ section { position: relative; }
 }
 .footer__bottom span {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: 15px;
+  color: white;
   letter-spacing: 0.08em;
-  color: var(--text-muted);
 }
 
 /* ═══════════════════════════════════════════════
@@ -593,7 +593,6 @@ section { position: relative; }
    ═══════════════════════════════════════════════ */
 .trusted {
   border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
   padding: 30px 40px;
 }
 .trusted__inner {
