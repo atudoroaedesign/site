@@ -14,7 +14,7 @@ function About() {
           <div className="hero__grid"></div>
         </div>
         <div className="page-hero__content">
-          <p className="hero__eyebrow" data-animate="fade-up">ABOUT NEXUS / 01</p>
+          <p className="hero__eyebrow" data-animate="fade-up">ABOUT LUXMUS / 01</p>
           <h1 className="page-hero__title" data-animate="fade-up" data-delay="100">
             We are the studio<br />behind the brands<br />people <em>remember.</em>
           </h1>
@@ -106,25 +106,35 @@ function About() {
             <div className="team__card" data-animate="fade-up">
               <img
                 src="/jane-doe.jpg"
-                alt="Jane Doe"
+                alt="Bernard Sobierajski"
                 className="team__photo"
               />
-              <h4>Jane Doe</h4>
-              <span className="team__role">Creative Director</span>
-              <p>Specializes in brand identity and web design, crafting visual experiences that are both beautiful and strategic.</p>
+              <h4>Bernard Sobierajski</h4>
+              <span className="team__role">Lead Developer</span>
+              <p>Specializes in web and software development, building fast, scalable solutions that drive real results.</p>
             </div>
             <div className="team__card" data-animate="fade-up" data-delay="100">
               <img
                 src="/john-doe.jpg"
-                alt="John Doe"
+                alt="Makilan Kindle"
                 className="team__photo"
               />
-              <h4>John Doe</h4>
-              <span className="team__role">Lead Developer</span>
-              <p>Specializes in web development and digital marketing, building fast, scalable solutions that drive real results.</p>
+              <h4>Makilan Kindle</h4>
+              <span className="team__role">Digital Marketing Specialist</span>
+              <p>Desc here.</p>
+            </div>
+            <div className="team__card" data-animate="fade-up" data-delay="150">
+              <img
+                src="/john-doe.jpg"
+                alt="Brianna Atudoroae"
+                className="team__photo"
+              />
+              <h4>Brianna Atudoroae</h4>
+              <span className="team__role">Graphic Designer</span>
+              <p>Desc here.</p>
             </div>
           </div>
-          <div className="team__side-text" data-animate="fade-up" data-delay="150">
+          <div className="team__side-text" data-animate="fade-up" data-delay="200">
             <h3>A small team.<br />A big <em>impact.</em></h3>
             <p>We believe the best work comes from people who genuinely care. Our team is intentionally small — every project gets our full attention, not a junior account manager and a template.</p>
             <p>We're not an agency of hundreds. We're a focused group of specialists who have chosen quality over volume, and long-term partnerships over quick transactions.</p>

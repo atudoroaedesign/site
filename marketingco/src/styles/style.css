@@ -910,8 +910,8 @@ section { position: relative; }
 }
 .team__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 .team__card {
   background: var(--bg-card);
