@@ -10,27 +10,7 @@ const stats = [
 const testimonials = [
   {
     quote: "Nexus completely transformed how our brand shows up online. The web design work alone tripled our inbound inquiries within 60 days. I've worked with agencies that charge five times as much and delivered a fraction of this quality.",
-    initials: 'MR', name: 'Marcus Reid',   company: 'CEO, Crestline Co.',   tag: 'Web Design',
-  },
-  {
-    quote: "Their brand identity work was meticulous. They asked questions no one else asked — and delivered an identity that genuinely feels like us. Three years later, our brand is still turning heads.",
-    initials: 'SL', name: 'Sofia Lin',     company: 'Founder, Vero Labs',   tag: 'Brand Identity',
-  },
-  {
-    quote: "Social media management was something we always dreaded. Nexus made it seamless — our engagement is up 240% and we didn't lift a finger. Worth every penny and then some.",
-    initials: 'JT', name: 'James Thornton', company: 'Director, Altus Group', tag: 'Social Media',
-  },
-  {
-    quote: "The photography session changed everything. We finally have visuals that match the premium product we've always offered. Ryan understood our aesthetic immediately and delivered beyond expectations.",
-    initials: 'AP', name: 'Anika Patel',   company: 'CMO, Meridian',        tag: 'Photography',
-  },
-  {
-    quote: "Our digital marketing ROI has been exceptional since switching to Nexus. They built a full-funnel strategy that actually makes sense for our business — not just a generic plan with our logo slapped on it.",
-    initials: 'DK', name: 'Derek Kim',     company: 'Founder, Stackpoint',  tag: 'Digital Marketing',
-  },
-  {
-    quote: "We needed a logo that could grow with us. What Nexus delivered wasn't just a logo — it was a complete identity system with such clear thinking behind it that our whole team immediately understood and embraced it.",
-    initials: 'LN', name: 'Laura Nguyen',  company: 'Co-Founder, Brandwave', tag: 'Logo Design',
+    initials: 'MR', name: 'Marcus Reid', company: 'CEO, Crestline Co.', tag: 'Web Design',
   },
 ]
 

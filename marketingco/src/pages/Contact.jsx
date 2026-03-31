@@ -4,8 +4,8 @@ import useScrollAnimations from '../components/useScrollAnimations'
 function Contact() {
   useScrollAnimations()
 
-  const [fields, setFields]   = useState({ name: '', email: '', company: '', budget: '', service: '', message: '' })
-  const [errors, setErrors]   = useState({})
+  const [fields, setFields] = useState({ name: '', email: '', company: '', budget: '', service: '', message: '' })
+  const [errors, setErrors] = useState({})
   const [sending, setSending] = useState(false)
   const [success, setSuccess] = useState(false)
 
@@ -18,9 +18,9 @@ function Contact() {
   const validate = () => {
     const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     const newErrors = {}
-    if (!fields.name.trim())               newErrors.name    = true
-    if (!emailRx.test(fields.email.trim())) newErrors.email   = true
-    if (!fields.message.trim())            newErrors.message = true
+    if (!fields.name.trim()) newErrors.name = true
+    if (!emailRx.test(fields.email.trim())) newErrors.email = true
+    if (!fields.message.trim()) newErrors.message = true
     return newErrors
   }
 
@@ -65,7 +65,7 @@ function Contact() {
             <div className="contact-page__details" data-animate="fade-up" data-delay="300">
               <div className="contact__info-item">
                 <span className="contact__info-icon">✉</span>
-                <span>hello@nexusstudio.co</span>
+                <span>info@luxmus.com</span>
               </div>
               <div className="contact__info-item">
                 <span className="contact__info-icon">◎</span>
@@ -123,11 +123,11 @@ function Contact() {
                   <label htmlFor="budget">Estimated Budget</label>
                   <select id="budget" name="budget" value={fields.budget} onChange={handleChange}>
                     <option value="">Select range...</option>
-                    <option>Under $1,000</option>
-                    <option>$1,000 – $3,000</option>
-                    <option>$3,000 – $7,500</option>
-                    <option>$7,500 – $15,000</option>
-                    <option>$15,000+</option>
+                    <option>$300 - $500</option>
+                    <option>$500 - $700</option>
+                    <option>$700 - $1,000</option>
+                    <option>$1,000 - $1,500</option>
+                    <option>$1,500+</option>
                   </select>
                 </div>
               </div>
