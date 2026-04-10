@@ -1,5 +1,16 @@
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 import useScrollAnimations from '../components/useScrollAnimations'
+
+// ─── EmailJS credentials ───────────────────────────────────────────────────
+// After creating your EmailJS account, fill in these three values:
+//   SERVICE_ID  → EmailJS dashboard > Email Services > your service ID
+//   TEMPLATE_ID → EmailJS dashboard > Email Templates > your template ID
+//   PUBLIC_KEY  → EmailJS dashboard > Account > Public Key
+const EMAILJS_SERVICE_ID = 'service_gzgv0fe'
+const EMAILJS_TEMPLATE_ID = 'template_ok6clhl'
+const EMAILJS_PUBLIC_KEY = 'woriuA5mZPPTFkFH1'
+// ──────────────────────────────────────────────────────────────────────────
 
 function Contact() {
   useScrollAnimations()
@@ -8,6 +19,7 @@ function Contact() {
   const [errors, setErrors] = useState({})
   const [sending, setSending] = useState(false)
   const [success, setSuccess] = useState(false)
+  const [sendError, setSendError] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -32,12 +44,31 @@ function Contact() {
       return
     }
     setSending(true)
-    setTimeout(() => {
-      setSending(false)
-      setSuccess(true)
-      setFields({ name: '', email: '', company: '', budget: '', service: '', message: '' })
-      setTimeout(() => setSuccess(false), 5000)
-    }, 1200)
+    setSendError(false)
+
+    const templateParams = {
+      from_name: fields.name,
+      from_email: fields.email,
+      company: fields.company || 'Not provided',
+      budget: fields.budget || 'Not specified',
+      service: fields.service || 'Not specified',
+      message: fields.message,
+      to_email: 'info@luxmus.com',
+    }
+
+    emailjs
+      .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
+      .then(() => {
+        setSending(false)
+        setSuccess(true)
+        setFields({ name: '', email: '', company: '', budget: '', service: '', message: '' })
+        setTimeout(() => setSuccess(false), 6000)
+      })
+      .catch(() => {
+        setSending(false)
+        setSendError(true)
+        setTimeout(() => setSendError(false), 6000)
+      })
   }
 
   const inputStyle = (field) => errors[field] ? { borderColor: '#ef4444' } : {}
@@ -171,6 +202,11 @@ function Contact() {
               {success && (
                 <p className="form__success visible">
                   ✓ Message sent! We'll be in touch within one business day.
+                </p>
+              )}
+              {sendError && (
+                <p className="form__success visible" style={{ background: 'rgba(239,68,68,0.08)', borderColor: 'rgba(239,68,68,0.3)', color: '#f87171' }}>
+                  ✗ Something went wrong. Please email us directly at info@luxmus.com.
                 </p>
               )}
             </form>
