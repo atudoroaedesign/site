@@ -2,8 +2,8 @@ import { useState, useEffect, useRef } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 function Navbar() {
-  const [scrolled,    setScrolled]    = useState(false)
-  const [menuOpen,    setMenuOpen]    = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const menuRef = useRef(null)
 
   /* Scroll state */
@@ -29,11 +29,11 @@ function Navbar() {
   const closeMenu = () => setMenuOpen(false)
 
   const navLinks = [
-    { to: '/about',        label: 'About' },
-    { to: '/services',     label: 'Services' },
-    { to: '/process',      label: 'Process' },
-    { to: '/testimonials', label: 'Testimonials' },
-    { to: '/contact',      label: 'Contact' },
+    { to: '/about', label: 'About' },
+    { to: '/services', label: 'Services' },
+    { to: '/process', label: 'Process' },
+    //{ to: '/testimonials', label: 'Testimonials' }, hiding testimonials until needed
+    { to: '/contact', label: 'Contact' },
   ]
 
   return (
