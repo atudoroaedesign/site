@@ -15,7 +15,7 @@ function Home() {
           <div className="hero__grid"></div>
         </div>
         <div className="hero__content">
-          <p className="hero__eyebrow" data-animate="fade-up">CREATIVE STUDIO / 01</p>
+          {/*<p className="hero__eyebrow" data-animate="fade-up">CREATIVE STUDIO / 01</p>*/}
           <h1 className="hero__headline" data-animate="fade-up" data-delay="100">
             Where bold ideas<br />
             meet <em>precise</em><br />
@@ -26,7 +26,7 @@ function Home() {
           </p>
           <div className="hero__actions" data-animate="fade-up" data-delay="300">
             <Link to="/services" className="btn btn--primary">Explore Services →</Link>
-            <Link to="/process"  className="btn btn--ghost">Our Process</Link>
+            {/*<Link to="/process" className="btn btn--ghost">Our Process</Link>*/}
           </div>
         </div>
         <div className="hero__visual">
@@ -56,8 +56,8 @@ function Home() {
           <Link to="/services#design" className="preview__card" data-animate="fade-up">
             <div className="preview__card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
               </svg>
             </div>
             <h3>Graphic Design</h3>
@@ -67,7 +67,7 @@ function Home() {
           <Link to="/services#marketing" className="preview__card" data-animate="fade-up" data-delay="120">
             <div className="preview__card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
               </svg>
             </div>
             <h3>Marketing</h3>
@@ -77,8 +77,8 @@ function Home() {
           <Link to="/about" className="preview__card" data-animate="fade-up" data-delay="240">
             <div className="preview__card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="12" cy="8" r="4"/>
-                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
               </svg>
             </div>
             <h3>About Nexus</h3>
@@ -105,8 +105,8 @@ function Home() {
           </div>
         </div>
       </section>
-
       {/* ═══════ PULL QUOTE ═══════ */}
+      {/*
       <section className="pullquote">
         <div className="pullquote__inner" data-animate="fade-up">
           <div className="pullquote__mark">"</div>
@@ -121,7 +121,7 @@ function Home() {
           <Link to="/testimonials" className="btn btn--ghost pullquote__btn">Read All Reviews →</Link>
         </div>
       </section>
-
+      */}
       {/* ═══════ CTA BAND ═══════ */}
       <section className="cta-band">
         <div className="cta-band__inner" data-animate="fade-up">

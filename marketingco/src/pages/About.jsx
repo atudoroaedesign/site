@@ -76,12 +76,12 @@ function About() {
         </div>
         <div className="values__grid">
           {[
-            { num: '01', title: 'Craft Over Speed',              body: "We don't rush. Every pixel, headline, and strategy is considered. Quality is non-negotiable — and our clients feel that difference." },
-            { num: '02', title: 'Honest Communication',          body: 'We say what we mean and mean what we say. No jargon, no overpromising. Just clear, direct collaboration from day one to delivery.' },
-            { num: '03', title: 'Results-Driven Design',         body: "Beautiful work that doesn't perform is just decoration. Everything we create is designed with a clear goal — and we track whether it hits it." },
-            { num: '04', title: 'Long-Term Thinking',            body: 'We build for longevity. Trends fade. Brands built on strong foundations, clear positioning, and quality craft endure.' },
+            { num: '01', title: 'Craft Over Speed', body: "We don't rush. Every pixel, headline, and strategy is considered. Quality is non-negotiable — and our clients feel that difference." },
+            { num: '02', title: 'Honest Communication', body: 'We say what we mean and mean what we say. No jargon, no overpromising. Just clear, direct collaboration from day one to delivery.' },
+            { num: '03', title: 'Results-Driven Design', body: "Beautiful work that doesn't perform is just decoration. Everything we create is designed with a clear goal — and we track whether it hits it." },
+            { num: '04', title: 'Long-Term Thinking', body: 'We build for longevity. Trends fade. Brands built on strong foundations, clear positioning, and quality craft endure.' },
             { num: '05', title: 'Partnership, Not Transactions', body: 'We invest in every project as if it were our own company. When you grow, we grow. That alignment drives everything we do.' },
-            { num: '06', title: 'Fearless Creativity',           body: "Safe is forgettable. We push ideas past the obvious — then refine them until they're both bold and right for your audience." },
+            { num: '06', title: 'Fearless Creativity', body: "Safe is forgettable. We push ideas past the obvious — then refine them until they're both bold and right for your audience." },
           ].map(({ num, title, body }, i) => (
             <div className="value__card" key={num} data-animate="fade-up" data-delay={i * 80}>
               <div className="value__num">{num}</div>
@@ -130,7 +130,7 @@ function About() {
                 className="team__photo"
               />
               <h4>Brianna Atudoroae</h4>
-              <span className="team__role">Graphic Designer</span>
+              <span className="team__role">Lead Graphic Designer</span>
               <p>Desc here.</p>
             </div>
           </div>
