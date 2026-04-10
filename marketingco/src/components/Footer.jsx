@@ -15,11 +15,11 @@ function Footer() {
 
         <div className="footer__links">
           <div className="footer__col">
-            {/*<strong>Company</strong>
+            <strong>Company</strong>
             <Link to="/about">About Us</Link>
+            <Link to="/about#team">The Team</Link>
             <Link to="/process">Our Process</Link>
-            <Link to="/testimonials">Testimonials</Link>
-            <Link to="/contact">Contact</Link>*/}
+            <Link to="/contact">Contact</Link>
           </div>
           <div className="footer__col">
             <strong>Design</strong>

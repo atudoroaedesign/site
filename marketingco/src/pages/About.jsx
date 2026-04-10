@@ -93,7 +93,7 @@ function About() {
       </section>
 
       {/* ═══════ TEAM ═══════ */}
-      <section className="about-team">
+      <section className="about-team" id="team">
         <div className="section__header">
           <p className="section__eyebrow">THE TEAM</p>
           <div className="section__title-row">

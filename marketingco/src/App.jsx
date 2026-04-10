@@ -9,11 +9,14 @@ import Process from './pages/Process'
 import Testimonials from './pages/Testimonials'
 import Contact from './pages/Contact'
 
+// Scrolls to top on navigation, but skips if there's a hash anchor
 function ScrollToTop() {
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' })
-  }, [pathname])
+    if (!hash) {
+      window.scrollTo({ top: 0, behavior: 'instant' })
+    }
+  }, [pathname, hash])
   return null
 }
 
@@ -35,7 +38,16 @@ function AnimatedRoutes() {
         if (transitionStage === 'fadeOut') {
           setTransitionStage('fadeIn')
           setDisplayLocation(location)
-          window.scrollTo({ top: 0, behavior: 'instant' })
+          // After navigation: scroll to hash anchor OR top
+          const hash = location.hash
+          if (hash) {
+            setTimeout(() => {
+              const el = document.querySelector(hash)
+              if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }, 80)
+          } else {
+            window.scrollTo({ top: 0, behavior: 'instant' })
+          }
         }
       }}
     >
