@@ -32,7 +32,7 @@ function About() {
             <h2 className="section__title">Built from a<br />belief in <em>craft.</em></h2>
           </div>
           <div className="about-story__right" data-animate="fade-up" data-delay="150">
-            <p>Nexus Studio was founded on a simple frustration: too many businesses were settling for generic visuals and hollow marketing strategies that looked the same as everyone else's.</p>
+            <p>Luxmus was founded on a simple frustration: too many businesses were settling for generic visuals and hollow marketing strategies that looked the same as everyone else's.</p>
             <p>We set out to change that. Every project we take on starts with a deep understanding of who you are, what you're building, and who you're trying to reach. From there, we build with intention — whether that's a brand identity system, a high-converting website, or a full-scale digital marketing campaign.</p>
             <p>We are a small team by design. That means every client gets senior-level attention, direct communication, and work that's built to last — not outsourced or templated.</p>
           </div>
@@ -105,7 +105,7 @@ function About() {
           <div className="team__grid">
             <div className="team__card" data-animate="fade-up">
               <img
-                src="/jane-doe.jpg"
+                src="/self.jpg"
                 alt="Bernard Sobierajski"
                 className="team__photo"
               />

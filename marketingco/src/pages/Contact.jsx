@@ -67,10 +67,10 @@ function Contact() {
                 <span className="contact__info-icon">✉</span>
                 <span>info@luxmus.com</span>
               </div>
-              <div className="contact__info-item">
+              {/*<div className="contact__info-item">
                 <span className="contact__info-icon">◎</span>
                 <span>Available Worldwide — Remote-First</span>
-              </div>
+              </div>*/}
               <div className="contact__info-item">
                 <span className="contact__info-icon">⏱</span>
                 <span>Response within 1 business day</span>
