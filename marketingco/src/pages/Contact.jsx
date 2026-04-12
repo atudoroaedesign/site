@@ -167,11 +167,17 @@ function Contact() {
                 <label htmlFor="service">Service Interested In</label>
                 <select id="service" name="service" value={fields.service} onChange={handleChange}>
                   <option value="">Select a service...</option>
+                  <optgroup label="Web Development">
+                    <option>Custom Web Development</option>
+                    <option>Web Design &amp; UX</option>
+                    <option>Landing Pages</option>
+                    <option>Maintenance &amp; Support</option>
+                  </optgroup>
                   <optgroup label="Graphic Design">
-                    <option>Web Development</option>
-                    <option>Web Design</option>
-                    <option>Brand Identity &amp; Packaging</option>
+                    <option>Brand Identity</option>
                     <option>Logo Design</option>
+                    <option>Print &amp; Collateral</option>
+                    <option>Social &amp; Digital Graphics</option>
                   </optgroup>
                   <optgroup label="Marketing">
                     <option>Ad Development</option>

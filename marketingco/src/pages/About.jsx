@@ -125,7 +125,7 @@ function About() {
             </div>
             <div className="team__card" data-animate="fade-up" data-delay="150">
               <img
-                src="/john-doe.jpg"
+                src="/bri.jpg"
                 alt="Brianna Atudoroae"
                 className="team__photo"
               />

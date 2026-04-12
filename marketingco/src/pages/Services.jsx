@@ -1,26 +1,49 @@
 import { Link } from 'react-router-dom'
 import useScrollAnimations from '../components/useScrollAnimations'
 
-const designServices = [
+const webDevServices = [
   {
-    num: '01', title: 'Web Development',
+    num: '01', title: 'Custom Web Development',
     desc: 'Custom-built websites engineered for speed, SEO, and growth. Every line of code is written with purpose — no bloated templates, no cookie-cutter CMS setups.',
     items: ['Custom front-end & back-end development', 'CMS integration (WordPress, Webflow, custom)', 'Performance optimization & Core Web Vitals', 'Responsive, accessible, cross-browser builds'],
   },
   {
-    num: '02', title: 'Web Design',
+    num: '02', title: 'Web Design & UX',
     desc: 'Interfaces that convert. We design digital experiences that balance aesthetic sophistication with intuitive usability — making visitors into customers.',
     items: ['UI/UX strategy and wireframing', 'High-fidelity mockups and prototypes', 'Landing page design & A/B testing', 'Design systems and component libraries'],
   },
   {
-    num: '03', title: 'Brand Identity & Packaging',
+    num: '03', title: 'Landing Pages',
+    desc: 'High-converting, single-purpose pages designed to capture leads and drive action. Fast to launch, easy to test, and built to perform from day one.',
+    items: ['Lead generation & sales landing pages', 'Clear, compelling copywriting structure', 'Mobile-first, fast-loading builds', 'Analytics & conversion tracking setup'],
+  },
+  {
+    num: '04', title: 'Maintenance & Support',
+    desc: 'Your website is a living product — we keep it fast, secure, and up to date so you never have to worry about downtime or technical debt.',
+    items: ['Ongoing updates & content changes', 'Security patches & plugin management', 'Hosting, backups & uptime monitoring', 'Speed audits & Core Web Vitals tuning'],
+  },
+]
+
+const graphicDesignServices = [
+  {
+    num: '01', title: 'Brand Identity',
     desc: 'A complete visual identity that works everywhere — from your website header to your product shelf. Cohesive, intentional, and built for the long haul.',
     items: ['Brand strategy & positioning', 'Color, typography & visual language systems', 'Packaging design for retail & e-commerce', 'Brand guidelines and asset libraries'],
   },
   {
-    num: '04', title: 'Logo Design',
+    num: '02', title: 'Logo Design',
     desc: "A mark that carries your company's identity through every touchpoint. Timeless, versatile, and entirely yours — never clip art, never generic.",
     items: ['Discovery & concept exploration', 'Multiple concepts with rationale', 'Full vector files in all formats', 'Logo usage guidelines included'],
+  },
+  {
+    num: '03', title: 'Print & Collateral',
+    desc: 'From business cards to billboards, we extend your brand into the physical world with print-ready design that commands attention off-screen.',
+    items: ['Business cards, brochures & flyers', 'Signage, banners & trade show materials', 'Stationery & branded document templates', 'Print-ready files with bleed & specs'],
+  },
+  {
+    num: '04', title: 'Social & Digital Graphics',
+    desc: 'Scroll-stopping visuals designed for every platform. Consistent, on-brand graphics that elevate your digital presence and drive engagement.',
+    items: ['Social media templates & post graphics', 'Email header & newsletter design', 'Digital ads & display banners', 'Presentation decks & pitch materials'],
   },
 ]
 
@@ -79,46 +102,70 @@ function Services() {
             Everything your brand<br />needs to <em>stand out.</em>
           </h1>
           <p className="page-hero__sub" data-animate="fade-up" data-delay="200">
-            Two core disciplines — Design and Marketing — offered individually or as a complete, integrated solution.
+            Three core disciplines — Web Development, Graphic Design, and Marketing — offered individually or as a complete, integrated solution.
           </p>
         </div>
       </section>
 
-      {/* ═══════ DESIGN PILLAR ═══════ */}
-      <section className="services-full" id="design">
+      {/* ═══════ WEB DEVELOPMENT PILLAR ═══════ */}
+      <section className="services-full" id="web-development">
         <div className="services-full__header">
           <div className="services-full__label">
             <div className="services__pillar-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                <path d="M16 18l6-6-6-6M8 6L2 12l6 6" />
+                <path d="M12 2v20" strokeDasharray="3 3" />
               </svg>
             </div>
             <div>
               <p className="section__eyebrow">PILLAR ONE</p>
+              <h2 className="section__title">Web Development</h2>
+            </div>
+          </div>
+          <p className="services-full__desc">Purpose-built digital products engineered for performance and scale. We write clean, modern code that turns your vision into a fast, reliable, and beautiful web presence.</p>
+        </div>
+        <div className="services-full__cards">
+          {webDevServices.map((svc, i) => (
+            <ServiceCard key={svc.num} {...svc} delay={i * 100} />
+          ))}
+        </div>
+      </section>
+
+      {/* ═══════ GRAPHIC DESIGN PILLAR ═══════ */}
+      <section className="services-full services-full--alt" id="graphic-design">
+        <div className="services-full__header">
+          <div className="services-full__label">
+            <div className="services__pillar-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <div>
+              <p className="section__eyebrow">PILLAR TWO</p>
               <h2 className="section__title">Graphic Design</h2>
             </div>
           </div>
-          <p className="services-full__desc">Visual language built to last. We create identities, interfaces, and systems that communicate who you are — clearly, beautifully, and consistently.</p>
+          <p className="services-full__desc">Visual language built to last. We create identities, print materials, and digital graphics that communicate who you are — clearly, beautifully, and consistently.</p>
         </div>
         <div className="services-full__cards">
-          {designServices.map((svc, i) => (
+          {graphicDesignServices.map((svc, i) => (
             <ServiceCard key={svc.num} {...svc} delay={i * 100} />
           ))}
         </div>
       </section>
 
       {/* ═══════ MARKETING PILLAR ═══════ */}
-      <section className="services-full services-full--alt" id="marketing">
+      <section className="services-full" id="marketing">
         <div className="services-full__header">
           <div className="services-full__label">
             <div className="services__pillar-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
               </svg>
             </div>
             <div>
-              <p className="section__eyebrow">PILLAR TWO</p>
+              <p className="section__eyebrow">PILLAR THREE</p>
               <h2 className="section__title">Marketing</h2>
             </div>
           </div>
