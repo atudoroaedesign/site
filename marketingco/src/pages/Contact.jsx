@@ -174,8 +174,8 @@ function Contact() {
                     <option>Maintenance &amp; Support</option>
                   </optgroup>
                   <optgroup label="Graphic Design">
-                    <option>Brand Identity</option>
-                    <option>Logo Design</option>
+                    <option>Brand Identity &amp; Logo Design</option>
+                    <option>Motion Graphics</option>
                     <option>Print &amp; Collateral</option>
                     <option>Social &amp; Digital Graphics</option>
                   </optgroup>

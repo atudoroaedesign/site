@@ -26,14 +26,14 @@ const webDevServices = [
 
 const graphicDesignServices = [
   {
-    num: '01', title: 'Brand Identity',
-    desc: 'A complete visual identity that works everywhere — from your website header to your product shelf. Cohesive, intentional, and built for the long haul.',
-    items: ['Brand strategy & positioning', 'Color, typography & visual language systems', 'Packaging design for retail & e-commerce', 'Brand guidelines and asset libraries'],
+    num: '01', title: 'Brand Identity & Logo Design',
+    desc: 'A complete visual identity that works everywhere. From custom logo conception to comprehensive brand systems — cohesive, intentional, and built for the long haul.',
+    items: ['Brand strategy & positioning', 'Custom logo design & visual identity', 'Color, typography & design systems', 'Comprehensive brand guidelines'],
   },
   {
-    num: '02', title: 'Logo Design',
-    desc: "A mark that carries your company's identity through every touchpoint. Timeless, versatile, and entirely yours — never clip art, never generic.",
-    items: ['Discovery & concept exploration', 'Multiple concepts with rationale', 'Full vector files in all formats', 'Logo usage guidelines included'],
+    num: '02', title: 'Motion Graphics',
+    desc: 'Dynamic animations and video content that bring your brand to life. Engaging, scroll-stopping, and crafted to tell your story in motion.',
+    items: ['Promotional videos & animation', 'Logo animation & kinetic typography', 'Social media video content', 'Explainer videos & product demos'],
   },
   {
     num: '03', title: 'Print & Collateral',

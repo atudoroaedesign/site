@@ -30,8 +30,8 @@ function Footer() {
           </div>
           <div className="footer__col">
             <strong>Graphic Design</strong>
-            <Link to="/services#graphic-design">Brand Identity</Link>
-            <Link to="/services#graphic-design">Logo Design</Link>
+            <Link to="/services#graphic-design">Brand &amp; Logos</Link>
+            <Link to="/services#graphic-design">Motion Graphics</Link>
             <Link to="/services#graphic-design">Print &amp; Collateral</Link>
             <Link to="/services#graphic-design">Digital Graphics</Link>
           </div>
