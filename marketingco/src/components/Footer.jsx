@@ -37,10 +37,10 @@ function Footer() {
           </div>
           <div className="footer__col">
             <strong>Marketing</strong>
+            <Link to="/services#marketing">SEO Services</Link>
             <Link to="/services#marketing">Ad Development</Link>
-            <Link to="/services#marketing">Photography</Link>
+            <Link to="/services#marketing">Ad Photography</Link>
             <Link to="/services#marketing">Social Media</Link>
-            <Link to="/services#marketing">Digital Marketing</Link>
           </div>
         </div>
 

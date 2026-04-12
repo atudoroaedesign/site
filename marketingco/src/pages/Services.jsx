@@ -49,24 +49,24 @@ const graphicDesignServices = [
 
 const marketingServices = [
   {
-    num: '01', title: 'Ad Development',
+    num: '01', title: 'SEO Services (Search Engine Optimization)',
+    desc: 'Full-funnel digital strategy from awareness to loyal customer. SEO, email, paid media — all working together toward a single goal: your growth.',
+    items: ['SEO audit, strategy & implementation', 'Email marketing & automation flows', 'Funnel design & conversion optimization', 'Analytics setup, tracking & reporting'],
+  },
+  {
+    num: '02', title: 'Ad Development',
     desc: 'Creative ad campaigns built to stop the scroll and start conversions. We handle strategy, copywriting, design, and production — across every platform.',
     items: ['Meta, Google, LinkedIn & TikTok ads', 'Ad copywriting & creative direction', 'A/B testing and performance iteration', 'Monthly reporting and optimization'],
   },
   {
-    num: '02', title: 'Company Photography',
+    num: '03', title: 'Advertisement Photography',
     desc: "Professional imagery that tells your brand's authentic story. From team headshots to product campaigns — visuals that make people stop and pay attention.",
     items: ['Brand & lifestyle photography', 'Team and executive portraits', 'Product and e-commerce photography', 'Event and behind-the-scenes coverage'],
   },
   {
-    num: '03', title: 'Social Media Management',
+    num: '04', title: 'Social Media Management',
     desc: 'Consistent presence, engaged audiences, measurable growth. We manage your social channels end-to-end so you can focus on running your business.',
     items: ['Content calendar & strategy', 'Graphic and video content creation', 'Community management & engagement', 'Monthly analytics and growth reports'],
-  },
-  {
-    num: '04', title: 'Digital Marketing',
-    desc: 'Full-funnel digital strategy from awareness to loyal customer. SEO, email, paid media — all working together toward a single goal: your growth.',
-    items: ['SEO audit, strategy & implementation', 'Email marketing & automation flows', 'Funnel design & conversion optimization', 'Analytics setup, tracking & reporting'],
   },
 ]
 

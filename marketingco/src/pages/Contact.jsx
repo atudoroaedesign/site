@@ -180,10 +180,10 @@ function Contact() {
                     <option>Social &amp; Digital Graphics</option>
                   </optgroup>
                   <optgroup label="Marketing">
+                    <option>SEO Services</option>
                     <option>Ad Development</option>
-                    <option>Company Photography</option>
+                    <option>Advertisement Photography</option>
                     <option>Social Media Management</option>
-                    <option>Digital Marketing</option>
                   </optgroup>
                   <option>Multiple Services / Full Package</option>
                   <option>Not Sure Yet</option>
