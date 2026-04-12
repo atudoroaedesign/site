@@ -10,7 +10,7 @@ function Footer() {
             <span className="nav__logo-mark">L</span>
             <span className="footer__name">Luxmus</span>
           </div>
-          <p>Design &amp; Marketing for companies that refuse to blend in.</p>
+          <p>Web Development, Design &amp; Marketing for companies that refuse to blend in.</p>
         </div>
 
         <div className="footer__links">
@@ -22,11 +22,18 @@ function Footer() {
             <Link to="/contact">Contact</Link>
           </div>
           <div className="footer__col">
-            <strong>Design</strong>
-            <Link to="/services#design">Web Development</Link>
-            <Link to="/services#design">Web Design</Link>
-            <Link to="/services#design">Brand Identity</Link>
-            <Link to="/services#design">Logo Design</Link>
+            <strong>Development</strong>
+            <Link to="/services#web-development">Custom Website</Link>
+            <Link to="/services#web-development">Web Design &amp; UX</Link>
+            <Link to="/services#web-development">Landing Pages</Link>
+            <Link to="/services#web-development">Maintenance</Link>
+          </div>
+          <div className="footer__col">
+            <strong>Graphic Design</strong>
+            <Link to="/services#graphic-design">Brand Identity</Link>
+            <Link to="/services#graphic-design">Logo Design</Link>
+            <Link to="/services#graphic-design">Print &amp; Collateral</Link>
+            <Link to="/services#graphic-design">Digital Graphics</Link>
           </div>
           <div className="footer__col">
             <strong>Marketing</strong>
