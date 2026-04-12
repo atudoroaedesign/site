@@ -85,7 +85,7 @@ function Contact() {
         <div className="contact-page__inner">
           {/* ═══ LEFT ═══ */}
           <div className="contact-page__left">
-            <p className="hero__eyebrow" data-animate="fade-up">CONTACT / 05</p>
+            <p className="hero__eyebrow" data-animate="fade-up">CONTACT / 04</p>
             <h1 className="contact-page__title" data-animate="fade-up" data-delay="100">
               Let's build something<br /><em>remarkable</em><br />together.
             </h1>
