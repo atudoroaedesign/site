@@ -6,25 +6,25 @@ const webDevServices = [
     num: '01', title: 'Custom Web Development',
     desc: 'Custom-built websites engineered for speed, SEO, and growth. Every line of code is written with purpose — no bloated templates, no cookie-cutter CMS setups.',
     items: ['Custom front-end & back-end development', 'CMS integration (WordPress, Webflow, custom)', 'Performance optimization & Core Web Vitals', 'Responsive, accessible, cross-browser builds'],
-    bgImage: '/bg-webdev.png'
+    bgImage: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop'
   },
   {
     num: '02', title: 'Web Design & UX',
     desc: 'Interfaces that convert. We design digital experiences that balance aesthetic sophistication with intuitive usability — making visitors into customers.',
     items: ['UI/UX strategy and wireframing', 'High-fidelity mockups and prototypes', 'Landing page design & A/B testing', 'Design systems and component libraries'],
-    bgImage: '/bg-webdesign.png'
+    bgImage: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=800&auto=format&fit=crop'
   },
   {
     num: '03', title: 'Landing Pages',
     desc: 'High-converting, single-purpose pages designed to capture leads and drive action. Fast to launch, easy to test, and built to perform from day one.',
     items: ['Lead generation & sales landing pages', 'Clear, compelling copywriting structure', 'Mobile-first, fast-loading builds', 'Analytics & conversion tracking setup'],
-    bgImage: '/bg-landing.png'
+    bgImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop'
   },
   {
     num: '04', title: 'Maintenance & Support',
     desc: 'Your website is a living product — we keep it fast, secure, and up to date so you never have to worry about downtime or technical debt.',
     items: ['Ongoing updates & content changes', 'Security patches & plugin management', 'Hosting, backups & uptime monitoring', 'Speed audits & Core Web Vitals tuning'],
-    bgImage: '/bg-maintenance.png'
+    bgImage: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop'
   },
 ]
 
@@ -60,13 +60,13 @@ const marketingServices = [
     num: '01', title: 'SEO Services (Search Engine Optimization)',
     desc: 'Full-funnel digital strategy from awareness to loyal customer. SEO, email, paid media — all working together toward a single goal: your growth.',
     items: ['SEO audit, strategy & implementation', 'Email marketing & automation flows', 'Funnel design & conversion optimization', 'Analytics setup, tracking & reporting'],
-    bgImage: '/bg-seo.png'
+    bgImage: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?q=80&w=800&auto=format&fit=crop'
   },
   {
     num: '02', title: 'Ad Development',
     desc: 'Creative ad campaigns built to stop the scroll and start conversions. We handle strategy, copywriting, design, and production — across every platform.',
     items: ['Meta, Google, LinkedIn & TikTok ads', 'Ad copywriting & creative direction', 'A/B testing and performance iteration', 'Monthly reporting and optimization'],
-    bgImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop'
+    bgImage: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop'
   },
   {
     num: '03', title: 'Advertisement Photography',
@@ -84,7 +84,7 @@ const marketingServices = [
 
 function ServiceCard({ num, title, desc, items, delay, bgImage }) {
   const customStyle = bgImage
-    ? { backgroundImage: `linear-gradient(rgba(8, 12, 20, 0.7), rgba(8, 12, 20, 0.95)), url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }
+    ? { backgroundImage: `linear-gradient(rgba(8, 12, 20, 0.8), rgba(8, 12, 20, 0.98)), url(${bgImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }
     : {}
 
   return (
