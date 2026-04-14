@@ -43,12 +43,23 @@ function Home() {
         <div className="section__header">
           <p className="section__eyebrow">WHAT WE DO</p>
           <div className="section__title-row">
-            <h2 className="section__title">Two Pillars.<br />One Vision.</h2>
-            <p className="section__desc">Design and marketing working together to give your brand a genuine, lasting edge.</p>
+            <h2 className="section__title">Three Pillars.<br />One Vision.</h2>
+            <p className="section__desc">Web development, graphic design, and marketing working together to give your brand a genuine, lasting edge.</p>
           </div>
         </div>
         <div className="preview__grid">
-          <Link to="/services#design" className="preview__card" data-animate="fade-up">
+          <Link to="/services#web-development" className="preview__card" data-animate="fade-up">
+            <div className="preview__card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M16 18l6-6-6-6M8 6L2 12l6 6" />
+                <path d="M12 2v20" strokeDasharray="3 3" />
+              </svg>
+            </div>
+            <h3>Web Development</h3>
+            <p>Custom websites, landing pages, UX design, and ongoing performance support.</p>
+            <span className="preview__card-link">Explore →</span>
+          </Link>
+          <Link to="/services#graphic-design" className="preview__card" data-animate="fade-up" data-delay="120">
             <div className="preview__card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M12 2L2 7l10 5 10-5-10-5z" />
@@ -56,29 +67,18 @@ function Home() {
               </svg>
             </div>
             <h3>Graphic Design</h3>
-            <p>Web development, web design, brand identity, packaging, and logo design.</p>
+            <p>Brand identity, logo design, print materials, and digital graphics.</p>
             <span className="preview__card-link">Explore →</span>
           </Link>
-          <Link to="/services#marketing" className="preview__card" data-animate="fade-up" data-delay="120">
+          <Link to="/services#marketing" className="preview__card" data-animate="fade-up" data-delay="240">
             <div className="preview__card-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
               </svg>
             </div>
             <h3>Marketing</h3>
-            <p>Ad development, photography, social media management, and digital marketing.</p>
+            <p>SEO strategies, ad campaigns, photography, and social media management.</p>
             <span className="preview__card-link">Explore →</span>
-          </Link>
-          <Link to="/about" className="preview__card" data-animate="fade-up" data-delay="240">
-            <div className="preview__card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="12" cy="8" r="4" />
-                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
-              </svg>
-            </div>
-            <h3>About Nexus</h3>
-            <p>Our story, mission, values, and the team behind every project.</p>
-            <span className="preview__card-link">Meet Us →</span>
           </Link>
         </div>
       </section>
