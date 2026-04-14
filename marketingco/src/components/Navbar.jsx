@@ -40,8 +40,7 @@ function Navbar() {
     <nav className={`nav${scrolled ? ' scrolled' : ''}`} id="nav" ref={menuRef}>
       <div className="nav__inner">
         <Link to="/" className="nav__logo">
-          <span className="nav__logo-mark">L</span>
-          <span className="nav__logo-text">Luxmus</span>
+          <img src="/luxmus-logo.png" alt="Luxmus Logo" style={{ height: '78px', width: 'auto' }} />
         </Link>
 
         <ul className="nav__links">

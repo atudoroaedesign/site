@@ -29,13 +29,8 @@ function Home() {
             {/*<Link to="/process" className="btn btn--ghost">Our Process</Link>*/}
           </div>
         </div>
-        <div className="hero__visual">
-          <div className="hero__ring hero__ring--1"></div>
-          <div className="hero__ring hero__ring--2"></div>
-          <div className="hero__ring hero__ring--3"></div>
-          <div className="hero__core">
-            <div className="hero__core-inner"><span>Luxmus</span></div>
-          </div>
+        <div className="hero__visual" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <img src="/luxmus-logo2.png" alt="Luxmus Graphic" style={{ maxWidth: '120%', width: '400px', height: 'auto', animation: 'float 6s ease-in-out infinite' }} />
         </div>
       </section>
 

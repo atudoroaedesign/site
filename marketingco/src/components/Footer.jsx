@@ -7,8 +7,7 @@ function Footer() {
 
         <div className="footer__brand">
           <div className="footer__brand-logo">
-            <span className="nav__logo-mark">L</span>
-            <span className="footer__name">Luxmus</span>
+            <img src="/luxmus-logo.png" alt="Luxmus Logo" style={{ height: '100px', width: 'auto', marginLeft: '-22px' }} />
           </div>
           <p>Web Development, Design &amp; Marketing for companies that refuse to blend in.</p>
         </div>
