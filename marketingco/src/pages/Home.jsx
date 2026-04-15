@@ -29,8 +29,8 @@ function Home() {
             {/*<Link to="/process" className="btn btn--ghost">Our Process</Link>*/}
           </div>
         </div>
-        <div className="hero__visual" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <img src="/luxmus-logo2.png" alt="Luxmus Graphic" style={{ maxWidth: '120%', width: '400px', height: 'auto', animation: 'float 6s ease-in-out infinite' }} />
+        <div className="hero__visual">
+          <img src="/luxmus-logo2.png" alt="Luxmus Graphic" className="hero__fancy-logo" />
         </div>
       </section>
 

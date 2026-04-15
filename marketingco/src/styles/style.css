@@ -763,6 +763,22 @@ section {
   height: 500px;
 }
 
+.hero__fancy-logo {
+  max-width: 120%;
+  width: 400px;
+  height: auto;
+  opacity: 0.85;
+  margin-left: 80px;
+  animation: floatAndSpin 25s linear infinite;
+  filter: drop-shadow(0 0 40px rgba(37, 99, 235, 0.4));
+}
+
+@keyframes floatAndSpin {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(180deg); }
+  100% { transform: translateY(0) rotate(360deg); }
+}
+
 .hero__ring {
   position: absolute;
   border-radius: 50%;
