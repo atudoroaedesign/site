@@ -1,16 +1,5 @@
 import { useState } from 'react'
-import emailjs from '@emailjs/browser'
 import useScrollAnimations from '../components/useScrollAnimations'
-
-// ─── EmailJS credentials ───────────────────────────────────────────────────
-// After creating your EmailJS account, fill in these three values:
-//   SERVICE_ID  → EmailJS dashboard > Email Services > your service ID
-//   TEMPLATE_ID → EmailJS dashboard > Email Templates > your template ID
-//   PUBLIC_KEY  → EmailJS dashboard > Account > Public Key
-const EMAILJS_SERVICE_ID = 'service_gzgv0fe'
-const EMAILJS_TEMPLATE_ID = 'template_ok6clhl'
-const EMAILJS_PUBLIC_KEY = 'woriuA5mZPPTFkFH1'
-// ──────────────────────────────────────────────────────────────────────────
 
 function Contact() {
   useScrollAnimations()
@@ -53,16 +42,24 @@ function Contact() {
       budget: fields.budget || 'Not specified',
       service: fields.service || 'Not specified',
       message: fields.message,
-      to_email: 'info@luxmus.com',
     }
 
-    emailjs
-      .send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY)
-      .then(() => {
+    fetch('https://luxmus.com/send.php', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(templateParams),
+    })
+      .then(res => res.json())
+      .then(data => {
         setSending(false)
-        setSuccess(true)
-        setFields({ name: '', email: '', company: '', budget: '', service: '', message: '' })
-        setTimeout(() => setSuccess(false), 6000)
+        if (data.success) {
+          setSuccess(true)
+          setFields({ name: '', email: '', company: '', budget: '', service: '', message: '' })
+          setTimeout(() => setSuccess(false), 6000)
+        } else {
+          setSendError(true)
+          setTimeout(() => setSendError(false), 6000)
+        }
       })
       .catch(() => {
         setSending(false)
