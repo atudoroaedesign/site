@@ -64,8 +64,8 @@ const marketingServices = [
   },
   {
     num: '02', title: 'PPC and Paid Search',
-    desc: 'Data-driven advertising campaigns that capture high-intent traffic and maximize your ROI. We manage strategy, keyword targeting, bid optimization, and analytics across major search platforms.',
-    items: ['Google Ads & Bing Ads management', 'Keyword research & bid optimization', 'Retargeting & conversion tracking', 'A/B testing & performance reporting'],
+    desc: 'Creative ad campaigns built to stop the scroll and start conversions. We handle strategy, copywriting, design, and production — across every platform.',
+    items: ['Meta, Google, LinkedIn & TikTok ads', 'Ad copywriting & creative direction', 'A/B testing and performance iteration', 'Monthly reporting and optimization'],
     bgImage: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop'
   },
   {
