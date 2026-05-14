@@ -4,7 +4,7 @@ import useScrollAnimations from '../components/useScrollAnimations'
 function Contact() {
   useScrollAnimations()
 
-  const [fields, setFields] = useState({ name: '', email: '', company: '', budget: '', service: '', message: '' })
+  const [fields, setFields] = useState({ name: '', email: '', company: '', service: '', message: '' })
   const [errors, setErrors] = useState({})
   const [sending, setSending] = useState(false)
   const [success, setSuccess] = useState(false)
@@ -39,7 +39,6 @@ function Contact() {
       from_name: fields.name,
       from_email: fields.email,
       company: fields.company || 'Not provided',
-      budget: fields.budget || 'Not specified',
       service: fields.service || 'Not specified',
       message: fields.message,
     }
@@ -54,7 +53,7 @@ function Contact() {
         setSending(false)
         if (data.success) {
           setSuccess(true)
-          setFields({ name: '', email: '', company: '', budget: '', service: '', message: '' })
+          setFields({ name: '', email: '', company: '', service: '', message: '' })
           setTimeout(() => setSuccess(false), 6000)
         } else {
           setSendError(true)
@@ -138,26 +137,13 @@ function Contact() {
                 </div>
               </div>
 
-              <div className="form__row">
-                <div className="form__group">
-                  <label htmlFor="company">Company Name</label>
-                  <input
-                    type="text" id="company" name="company"
-                    placeholder="Acme Inc."
-                    value={fields.company} onChange={handleChange}
-                  />
-                </div>
-                <div className="form__group">
-                  <label htmlFor="budget">Estimated Budget</label>
-                  <select id="budget" name="budget" value={fields.budget} onChange={handleChange}>
-                    <option value="">Select range...</option>
-                    <option>$300 - $500</option>
-                    <option>$500 - $700</option>
-                    <option>$700 - $1,000</option>
-                    <option>$1,000 - $1,500</option>
-                    <option>$1,500+</option>
-                  </select>
-                </div>
+              <div className="form__group">
+                <label htmlFor="company">Company Name</label>
+                <input
+                  type="text" id="company" name="company"
+                  placeholder="Acme Inc."
+                  value={fields.company} onChange={handleChange}
+                />
               </div>
 
               <div className="form__group">
